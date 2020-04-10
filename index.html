@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>piggyvest Sign-up page</title>
+</head>
+<style>
+    body {
+ 
+     background-color: #062863;
+     background-image: url("data1.png"), url("data2.png"), url("data3.png"), url("data4.png");
+     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+     background-size: 15%, 15%, 15%, 15%;
+     background-position:  left -1% top -15%, right -8.5% top -2%, left -5% bottom -10%, right -7% bottom -6%;
+     background-attachment: fixed;
+      }
+
+h1 {
+  color: #083E9E;
+  margin: 30px 0px 0px 0px;
+  padding: 15px 0px 0px 70px;
+  font-family: 'Calibri';
+  font-size: 28px;
+  font-weight: bold;   
+    }
+
+a [alt="piggyvest logo"] {
+  margin-left: 43%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+    }
+
+p {
+  padding: 0px 0px 0px 50px;
+  margin:  0px 0px 40px 0px;
+  font-family: 'Calibri';
+  font-style: normal;
+  font-size: 15px;
+  color: #728E8F;
+  letter-spacing: 0.5px;
+    }
+
+fieldset {
+  border-radius: 30px 30px 30px 1px;
+  background-color: white;
+  margin: auto;
+  padding: 0px 0px 20px 0px;
+  width: 420px;
+  height: 850px;
+  border: none;
+    }
+
+::placeholder{
+  color: #728E8F;
+  font-size: 17px ;
+  font-family: 'Calibri';
+  }
+
+label { 
+  margin: auto;
+  padding: 0px 0px 0px 42px;
+  font-family: 'Calibri';
+  font-size: 15px;
+  color: #4A5568;
+  font-style: bold ;
+    }
+
+input[type=text],
+input[required],
+input[optional],
+select {
+  width: 80%;
+  height: 7%;
+  padding: 12px 25px;
+  margin: 10px 40px ;
+  box-sizing: border-box;
+  border: none ;
+  border-radius: 4px ;
+  background-color: #EDF2F7 ;
+  font-family: 'Calibri';
+  font-size: 18px;
+  overflow: scroll;
+}
+
+input[required],
+input[optional],
+select:focus {
+background-color: none ;
+}
+
+input[type=submit] {
+  border-radius: 10px 10px 10px 0.5px;  
+  width: 80%;
+  padding: 20px;
+  margin: 20px 40px ;
+  color: white;
+  font-family: 'Calibri';
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #083E9E ;
+  border: none;
+}
+
+.already{
+  margin-left: 43%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  font-family: 'Calibri';
+  text-decoration: none;
+}
+
+</style>
+<body>
+    <a href="https://www.piggyvest.com/" > <img src="./piggyvest-logo.svg" alt="piggyvest logo"> </a>
+    <form>
+    <fieldset>   
+        <h1>Create a Secure Account</h1>
+        <p>Welcome to the future of Savings & Investments</p>
+        <label for="fname" >Full Name</label></br>
+        <input type="text" id="fname" name="fname" placeholder="Full Name" autocomplete="on" required></br>
+        <label for="email" >Email Address</label></br>
+        <input type="email" id="email" name="email" placeholder="Email Address"  autocomplete="on" required></br>
+        <label for="tel" >Phone Number</label></br>
+        <input type="tel" id="tel" name="tel" placeholder="Phone Number" autocomplete="on" required></br>
+        <label for="password" >Password</label></br>
+        <input type="password" id="password" name="password" placeholder="Password" autocomplete="on" required></br>
+        <label for="referrer" >Referrer Phone or Promo Code (Optional)</label></br>
+        <input type="text" id="referrer" name="referrer" placeholder="Referrer Phone Or Code" autocomplete="on" optional></br>
+        <label for="how">How Did You Hear About Us? (Optional)</label></br>
+        <select id="how" name="how" >
+            <option value="Click To Select">Click To Select</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Twitter">Twitter</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Friend/Family/Coworker Referral">Friend/Family/Coworker Referral</option>
+            <option value="Google Search">Google Search</option>
+            <option value="Google Playstore">Google Playstore</option>
+            <option value="Online Blog">Online Blog</option>
+            <option value="Local Newspaper">Local Newspaper</option>
+            <option value="At An Event">At An Event</option>
+            <option value="Other">Other</option>
+        </select></br>
+        <input type="submit" Value="CREATE ACCOUNT">
+    </fieldset>  
+    </form></br>
+  </br>
+
+
+
+<a href="https://dashboard.piggyvest.com/login" class="already">Already have an account? Log In</a>
+
+</body>
+</html>
